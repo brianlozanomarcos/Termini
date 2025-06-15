@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termini – Plataforma de Ciberseguridad con IA</title>
+  <style>
+    :root {
+      --primary-color: #00bcd4;
+      --background-color: #0d1117;
+      --card-bg: #161b22;
+      --text-color: #e6edf3;
+      --muted-color: #8b949e;
+      --accent-color: #2f81f7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d1117, #1f2937);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: var(--muted-color);
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 0.9rem 1.8rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #008ba3;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 0.6rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background-color: var(--card-bg);
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      color: var(--accent-color);
+      font-size: 1.3rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      background-color: #0b0e13;
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted-color);
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .section {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Termini</h1>
+    <p>Plataforma de auditoría y análisis de ciberseguridad con inteligencia artificial local</p>
+    <button class="button">Solicitar Demo</button>
+  </header>
+
+  <section class="section">
+    <h2>¿Qué es Termini?</h2>
+    <p><strong>Termini</strong> es una suite profesional para la auditoría y protección de sistemas informáticos, que combina escaneo de red, análisis de archivos sospechosos y evaluación de logs mediante inteligencia artificial local. Diseñado para funcionar completamente offline, Termini es la solución ideal para entornos sensibles, SOCs, analistas forenses y consultoras de seguridad.</p>
+  </section>
+
+  <section class="section">
+    <h2>Funciones principales</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🔍 Detección de vulnerabilidades de red</h3>
+        <p>Ejecuta escaneos avanzados de puertos y servicios, correlaciona resultados con bases de datos de vulnerabilidades (como CVE) y entrega un informe detallado con recomendaciones de mitigación.</p>
+      </div>
+      <div class="feature">
+        <h3>📁 Análisis de ficheros</h3>
+        <p>Procesa ejecutables, documentos y scripts en busca de patrones maliciosos mediante técnicas estáticas, reglas YARA y clasificadores con IA local.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Ingesta y análisis de logs</h3>
+        <p>Ingiere logs en múltiples formatos (Apache, Syslog, Windows Events, etc.) y utiliza modelos de lenguaje natural para detectar anomalías, explicar eventos y priorizar alertas.</p>
+      </div>
+      <div class="feature">
+        <h3>🤖 Asistente IA local</h3>
+        <p>Motor de IA embebido (Mistral / Phi-3) que permite consultas técnicas, explicaciones y ayuda contextual sin enviar datos a la nube.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Planes y licencias</h2>
+    <p><strong>Termini Community</strong> – Gratuita<br>
+    Acceso a funciones principales sin IA, ideal para uso educativo o personal.</p>
+    <p><strong>Termini Pro</strong> – Licencia única<br>
+    Incluye módulos completos, IA local, soporte prioritario y futuras actualizaciones.</p>
+  </section>
+
+  <section class="section">
+    <h2>Preguntas frecuentes</h2>
+    <p><strong>¿Requiere internet?</strong><br>No. Termini está diseñado para operar completamente en entornos cerrados.</p>
+    <p><strong>¿Es compatible con Windows, Linux y macOS?</strong><br>Sí, la plataforma es multiplataforma.</p>
+    <p><strong>¿Se puede integrar con otras herramientas?</strong><br>Exporta datos en JSON, CSV y ofrece una CLI para automatización.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Termini Technologies. Todos los derechos reservados. | info@termini.pt
+  </footer>
+</body>
+</html>
